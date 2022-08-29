@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/stats.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Resume</title>
+</head>
+<body>
+<nav>
+    <a>Skills</a>
+    <a>Certificates</a>
+    <a>Projects</a>
+    <a>Education</a>
+    <a>Soft Skills</a>
+    <a>Interests</a>
+</nav>
+<div class="info" th:object="${info}">
+    <img src="/images/Iliyan.jpg">
+    <h1 th:text="*{name}">
+    </h1>
+    <h3 th:text="*{position}">
+    </h3>
+    <span id="description" th:text="*{description}"></span>
+    <div class="social">
+        <span id="phoneNumber" class="fa fa-phone" th:text="| *{phoneNumber}|"></span>
+        <span id="email" class="fa fa-envelope" th:text="| *{email}|"></span>
+        <span id="address" class="fa fa-map-pin" th:text="| *{address}|"></span>
+        <a class="fa fa-linkedin" th:href="*{linkedIn}"></a>
+        <a class="fa fa-github" th:href="*{github}"></a>
+        <a class="fa fa-facebook" th:href="*{facebook}"></a>
+    </div>
+</div>
+<div class="wrapper">
+<div class="skills">
+    <h1>
+        Technical Skills
+    </h1>
+    <div class="pieContainer">
+        <div class="pieBackground">
+        </div>
+        <div id="pieSlice99_1" class="hold">
+            <div class="pie">
+            </div>
+        </div>
+        <div id="pieSlice99_2" class="hold">
+            <div class="pie">
+            </div>
+        </div>
+        <div class="stat-circle-cover">
+      <span class="stat-number">
+        85%
+      </span>
+        </div>
+        <span class="skill-name">Java</span>
+    </div>
+
+    <div class="pieContainer">
+        <div class="pieBackground">
+        </div>
+        <div id="pieSlice75_1" class="hold">
+            <div class="pie slice active">
+            </div>
+        </div>
+        <div id="pieSlice75_2" class="hold">
+            <div class="pie">
+            </div>
+        </div>
+        <div class="stat-circle-cover">
+      <span class="stat-number">
+        75%
+      </span>
+        </div>
+        <span class="skill-name">Spring Boot</span>
+    </div>
+
+    <div class="pieContainer">
+        <div class="pieBackground">
+        </div>
+        <div id="pieSlice70_1" class="hold">
+            <div class="pie slice active">
+            </div>
+        </div>
+        <div id="pieSlice70_2" class="hold">
+            <div class="pie">
+            </div>
+        </div>
+        <div class="stat-circle-cover">
+      <span class="stat-number">
+        70%
+      </span>
+        </div>
+        <span class="skill-name">MySQL</span>
+    </div>
+
+    <div class="pieContainer">
+        <div class="pieBackground">
+        </div>
+        <div id="pieSlice60_1" class="hold">
+            <div class="pie slice active">
+            </div>
+        </div>
+        <div id="pieSlice60_2" class="hold">
+            <div class="pie">
+            </div>
+        </div>
+        <div class="stat-circle-cover">
+      <span class="stat-number">
+        60%
+      </span>
+        </div>
+        <span class="skill-name">Html</span>
+    </div>
+
+    <div class="pieContainer">
+        <div class="pieBackground">
+        </div>
+        <div id="pieSlice55_1" class="hold">
+            <div class="pie slice active">
+            </div>
+        </div>
+        <div id="pieSlice55_2" class="hold">
+            <div class="pie">
+            </div>
+        </div>
+        <div class="stat-circle-cover">
+      <span class="stat-number">
+        55%
+      </span>
+        </div>
+        <span class="skill-name">JavaScript</span>
+    </div>
+
+    <div class="pieContainer">
+        <div class="pieBackground">
+        </div>
+        <div id="pieSlice50" class="hold">
+            <div class="pie">
+            </div>
+        </div>
+        <div class="stat-circle-cover">
+      <span class="stat-number">
+        50%
+      </span>
+        </div>
+        <span class="skill-name">Css</span>
+    </div>
+
+</div>
+    <div class="certificate">
+        <h1>
+            Certificates
+        </h1>
+        <a class="color85" href="https://drive.google.com/file/d/19y_7vdQx5aOQ6nIi8_d4Z2Uk1yvIC03j/view?usp=sharing">
+            <h3>Java Advanced May 2021</h3>
+        </a>
+        <a class="color85" href="https://drive.google.com/file/d/1mk9f6qYJtjkXO0Oh4eirlJE11XfHBIJU/view?usp=sharing">
+            <h3>Java OOp June 2021</h3>
+        </a>
+        <a class="color85" href="https://drive.google.com/file/d/16K3uNLOpeM8L0h6eo2iExpZAVerq-oqH/view?usp=sharing">
+            <h3>Programming Fundamentals with Java January 2021</h3>
+        </a>
+        <a class="color85" href="https://drive.google.com/file/d/1eiFfPNHuA8ihViMayb_WdClzPYzuyd5n/view?usp=sharing">
+            <h3>Programming Basic with Java October 2020</h3>
+        </a>
+        <a class="color75" href="https://drive.google.com/file/d/1L80jzTnU6FZxaSx0k_b07wH48mdQsBsa/view?usp=sharing">
+            <h3>Spring Data February 2022</h3>
+        </a>
+        <a class="color75" href="https://drive.google.com/file/d/1nmHlfVTZjZgehJrahKEs1ou_7IwwwdC1/view?usp=sharing">
+            <h3>Spring Fundamentals May 2022</h3>
+        </a>
+        <a class="color75" href="https://drive.google.com/file/d/116urDe_3la7BAUa1UI41C_sM8N37fcl8/view?usp=sharing">
+            <h3>Spring Advanced May 2022</h3>
+        </a>
+        <a class="color70" href="https://drive.google.com/file/d/1ZM4eOXOnotUZQGU9ySfspRM8g6rCIsqo/view?usp=sharing">
+            <h3>MySQL January 2022</h3>
+        </a>
+        <a class="color55" href="https://drive.google.com/file/d/1pZpzpFbckoSaD0essYBWLvJeAT34SbNK/view?usp=sharing">
+            <h3>JavaScript Advanced September 2021</h3>
+        </a>
+        <a class="color55" href="https://drive.google.com/file/d/1lW3s9OEg_KUOheiYT1Afshm4jE1s3fn6/view?usp=sharing">
+            <h3>JavaScript Applications October 2021</h3>
+        </a>
+
+    </div>
+</div>
+
+</body>
+</html>
