@@ -16,7 +16,7 @@ nav a{
     font-size: 24px;
 }
 nav a:hover {
-    color: #00afb5;
+    color: rgb(104, 253, 4);
     cursor: pointer;
 }
 .wrapper {
@@ -169,7 +169,7 @@ img {
     font-size: 20px;
     margin-top: 15px;
 }
-#data {
+.data-education {
     margin-top: -27px;
     font-family: cursive;
     font-size: 13px;
@@ -182,4 +182,17 @@ img {
 }
 .courses{
     margin-top: -10px;
+}
+#projects {
+    margin-left: 90px;
+}
+#projects a {
+    text-decoration: none;
+    color: black;
+}
+#projects a:hover {
+    color: rgb(104, 253, 4);
+}
+#projects div {
+    margin-left: 55px;
 }
