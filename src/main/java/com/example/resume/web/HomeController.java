@@ -1,6 +1,5 @@
 package com.example.resume.web;
 
-import com.example.resume.model.dto.InfoDto;
 import com.example.resume.service.InfoService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
