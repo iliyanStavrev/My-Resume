@@ -239,13 +239,16 @@ img {
 #projects div {
     margin-left: 55px;
 }
+
 #soft {
     margin-left: 130px;
     margin-top: 20px;
 }
+
 #soft h1{
    margin-left: 100px;
 }
+
 #soft span{
     display: inline-block;
     background-color: #5efb1d80;
@@ -257,11 +260,13 @@ img {
     margin-top: 7px;
     box-shadow: 2px -1px 2px black;
 }
+
 #interests{
     margin-left: 155px;
     margin-top: 10px;
     font-size: 20px;
 }
+
 #interests h1{
     margin-left: 105px;
 }
